@@ -1,0 +1,12 @@
+---
+title: "Index"
+author: "Justin Stott"
+date: "February 26, 2020"
+output: html_document
+---
+
+
+
+This is my new website 
+
+* [this is my lab](lab2b.html)
