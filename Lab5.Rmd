@@ -1,0 +1,13 @@
+---
+title: "Lab5"
+author: "Justin Stott"
+date: "March 4, 2020"
+output: html_document
+---
+
+```{r}
+
+
+
+```
+
