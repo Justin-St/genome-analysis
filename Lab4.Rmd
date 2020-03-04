@@ -1,0 +1,16 @@
+---
+title: "Lab4"
+author: "Justin Stott"
+date: "March 4, 2020"
+output: html_document
+---
+This is a filler document for lab 4 for the index
+```{r}
+
+
+
+
+
+```
+
+
