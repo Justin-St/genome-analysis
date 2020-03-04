@@ -1,0 +1,12 @@
+---
+title: "Paper"
+author: "Justin Stott"
+date: "March 4, 2020"
+output: html_document
+bibliography: data/refereneces.bib
+---
+
+Application written in R [@RCoreTeam] using the Shiny framework [@Chang2015].
+
+# REFERENCES
+
