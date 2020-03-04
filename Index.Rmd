@@ -9,4 +9,9 @@ output: html_document
 
 This is my new website 
 
-* [This is my lab](lab2b.html)
+* [This is my lab 3](Lab3.html)
+
+* [This is my lab 4](Lab4.html)
+
+* [This is my lab 5](Lab5.html)
+
