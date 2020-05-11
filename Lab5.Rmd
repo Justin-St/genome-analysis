@@ -110,9 +110,10 @@ library(tidyverse)
   count(sex, species) %>%
   arrange(species, desc(n))
 ```
-
+Hope its okay I couldnt get the origional function to work so i fiddled around to get the same result
 ```{r}
-SNPs <- read_tsv("data/23andMe_complete.txt", skip = 14, col_types = cols(chromosome = col_factor()))
+ SNPs <- read_tsv("data/23andMe_complete.txt", skip = 14, col_types = cols(chromosome = col_factor()))
+
 ```
 
 Execise 1
@@ -124,7 +125,7 @@ SNPs %>%
 Exercise 2 
 ```{r}
 SNPs %>% 
-  filter(chromosome = "MT", genotype %in% c('A','T'))
+  filter(chromosome == "MT", genotype %in% c('A','T'))
 
 ```
 
@@ -132,14 +133,14 @@ Exercise 3
 ```{r}
 SNPs %>% 
   group_by(chromosome) %>% 
-  summarize(minimum = min(position), maximum = max(position), total = count(chromosome))
+  summarize(minimum = min(position), maximum = max(position), total = sum(position))
 ```
 
 Exercise 4
 ```{r}
 SNPs %>% 
   group_by(chromosome) %>% 
-  summarize(minimum = min(position), maximum = max(position), total = count(chromosome)) %>% 
+  summarize(minimum = min(position), maximum = max(position), total = sum(position)) %>% 
   mutate(density = total/(maximum-minimum))
 ```
 
@@ -147,19 +148,19 @@ Exercise 5
 ```{r}
 SNPs %>% 
   group_by(chromosome) %>% 
-  summarize(minimum = min(position), maximum = max(position), total = count(chromosome)) %>% 
-  mutate(density = total/(maximum-minimum))
-  sort(density)
+  summarize(minimum = min(position), maximum = max(position), total = sum(position)) %>% 
+  mutate(density = total/(maximum-minimum)) %>% 
+  arrange(density)
 ```
 
 Exercise 6
 ```{r}
 newdata=SNPs %>% 
   group_by(chromosome) %>% 
-  summarize(minimum = min(position), maximum = max(position), total = count(chromosome)) %>% 
+  summarize(minimum = min(position), maximum = max(position), total = sum(position)) %>% 
   mutate(density = total/(maximum-minimum))
 
-write_csv(newdata, path = "data/newdata.csv")
+write_csv(newdata, path = "data/Lab5Data.csv")
 ```
 
 

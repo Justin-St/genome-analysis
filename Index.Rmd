@@ -16,3 +16,13 @@ This is my new website
 * [This is my lab 5](Lab5.html)
 
 * [This is my lab 6](Lab6.html)
+
+* [This is my lab 7](Lab7.html)
+
+* [This is my lab 8](Lab8.html)
+
+* [This is my lab 9](Lab9.html)
+
+* [This is my lab 10](Lab10.html)
+
+* [THis is my lab 11]
