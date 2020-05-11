@@ -11,6 +11,7 @@ Tutorial
 library(tidyverse)
 library(readr)
 
+
   download.file(url="https://ndownloader.figshare.com/files/2292169", destfile = "portal_data_joined.csv")
   surveys <- read_csv("portal_data_joined.csv")
   
@@ -114,8 +115,7 @@ library(readr)
 
 Hope its okay I couldnt get the origional function to work so i fiddled around to get the same result
 ```{r}
- SNPs <- read.tsv("data/23andMe_complete.txt", skip = 14, col_types = cols(chromosome = col_factor()))
-
+ SNPs <- read_tsv("data/23andMe_complete.txt", skip = 14, col_types = cols(chromosome = col_factor()))
 ```
 
 Execise 1
