@@ -1,0 +1,27 @@
+---
+title: "index"
+author: "Justin Stott"
+date: "February 26, 2020"
+output: html_document
+---
+
+
+
+This is my new website 
+
+* [This is my lab 3](Lab3.html)
+
+* [This is my lab 4](Lab4.html)
+
+* [This is my lab 5](Lab5.html)
+
+* [This is my lab 6](Lab6.html)
+
+* [This is my lab 7](Lab7.html)
+
+* [This is my lab 8](Lab8.html)
+
+* [This is my lab 9](Lab9.html)
+
+* [This is my lab 10](Lab10.html)
+
