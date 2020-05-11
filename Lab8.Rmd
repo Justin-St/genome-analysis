@@ -1,0 +1,11 @@
+---
+title: "Lab8"
+author: "Justin Stott"
+date: "March 18, 2020"
+output: html_document
+---
+This was as far back as I could reliably go
+```{r}
+
+```
+![Stott Family Geneology](images/StottGeneology.png)
